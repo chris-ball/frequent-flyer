@@ -1,0 +1,34 @@
+/* Colours */
+$teal: #5bc1b8;
+$teal--light: #a8e8df;
+$charcoal: #1d1d1d;
+$stone: #f1f1f1;
+$stone--light: #f7f7f7;
+$coffee: #a88457;
+
+$colour__brand--primary: $teal;
+$colour__brand--secondary: $coffee;
+
+/* Dimensions */
+$max-content-width: 1160px;
+
+/* Pre-defined break points */
+$break-points: (
+	576px: (
+		min-width: 540px
+	),
+	768px: (
+		min-width: 720px
+	),
+	992px: (
+		min-width: 960px
+	),
+	1200px: (
+		min-width: 1140px
+	)
+);
+
+/* Shadows */
+@mixin small-shadow {
+	box-shadow: 0 0.125rem 1.5rem rgba(0, 0, 0, 0.06);
+}

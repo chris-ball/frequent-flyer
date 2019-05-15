@@ -1,0 +1,56 @@
+.ff {
+	font-size: 22px;
+	overflow-x: hidden;
+	@media screen and (min-width: 768px) {
+		font-size: 24px;
+	}
+}
+
+.section {
+	background-color: $stone;
+	// padding: 120px 0;
+	&.is-dark {
+		background-color: $charcoal;
+	}
+	&.is-light {
+		background-color: $stone--light;
+	}
+	&.is-primary {
+		background-color: $teal;
+	}
+}
+
+.section-wrapper {
+	padding: 16% 0;
+}
+
+.narrow {
+	margin: 0 auto;
+	max-width: 620px;
+}
+
+.ff-banner {
+	background-image: url("/assets/download.jpg");
+	background-position: 70% 60%;
+	background-size: cover;
+}
+
+.ff-full-image {
+	height: 85vh;
+	width: 100%;
+
+	&.is-interior {
+		background-image: url("/assets/30908699181_9765f90412_o.jpg");
+		background-position: 70% 40%;
+		background-size: cover;
+	}
+}
+
+.banner-heading {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}

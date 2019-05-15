@@ -1,0 +1,31 @@
+.form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-family: "Overpass";
+	::placeholder {
+		color: inherit !important;
+	}
+}
+
+.form-field {
+	flex: 1 0 100%;
+	margin-bottom: 1rem;
+	padding: 1rem 0;
+	width: 100%;
+	&.is-narrow {
+		@media screen and (min-width: 992px) {
+			flex: 0 0 50%;
+		}
+	}
+}
+
+.input-field {
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	margin: 0 1rem;
+	padding: 0.25em 0;
+	width: calc(100% - 2rem);
+}

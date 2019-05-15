@@ -1,0 +1,20 @@
+.aspect-ratio-box {
+	background: white;
+	&.is-90:before {
+		padding-top: 90%;
+	}
+}
+
+.aspect-ratio-box:before {
+	content: "";
+	width: 1px;
+	margin-left: -1px;
+	float: left;
+	height: 0;
+}
+
+.aspect-ratio-box:after {
+	content: "";
+	display: table;
+	clear: both;
+}

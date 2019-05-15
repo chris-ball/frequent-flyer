@@ -1,0 +1,37 @@
+@import "../global/mixins";
+
+body {
+	font-family: "EB Garamond";
+}
+
+.type--centred {
+	text-align: center;
+}
+
+.section-heading {
+	font-family: inherit;
+	font-size: 32px;
+	font-style: italic;
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0 0 12%;
+	text-align: center;
+	&.is-primary {
+		color: $colour__brand--primary;
+	}
+	&.is-secondary {
+		color: $colour__brand--secondary;
+	}
+	&.is-white {
+		color: #fff;
+	}
+	&.no-margin {
+		margin: 0;
+	}
+}
+
+.type--xl {
+	font-size: 32px;
+	$font-sizes: 48px, null, null, null;
+	@include apply_breakpoints_to($font-sizes, font-size);
+}

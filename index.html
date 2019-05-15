@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FLYT | Frequent Flyer</title>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600i|Overpass" rel="stylesheet">
+
+    <!-- Existing Styles -->
+    <link rel="stylesheet" href="https://flythq.com/styles.a70022584bd7b8324192.css">
+
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="dist/css/index.min.css" />
+</head>
+
+<body>
+    <article class="ff">
+
+        <div class="banner ff-banner">
+            <div class="banner-heading">
+                <h2 class="smaller">Welcome to FLYT+ <br>our frequent flier club</h2>
+            </div>
+        </div>
+
+        <section class="section is-dark ff-intro">
+            <div class="container">
+                <div class="section-wrapper">
+                    <p class="intro-body type--centred">As a FLYT customer, you’re automatically signed up. Simply
+                        choose the tier and amount of credit you need and you’re ready to go. There’s no need to ask for
+                        a quote, you can book instantly using the FLYT website or give us a call. You only pay for the
+                        hours you fly, and, as a frequent flyer, you’ll also earn points to use on your next booking.
+                        You can choose an annual payment or a monthly direct debit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section ff-overview">
+            <div class="container">
+                <div class="section-wrapper">
+                    <div class="overview">
+                        <h3 class="overview-heading is-secondary">1 hour = 1,000 points</h3>
+                        <p class="type--centred narrow">We’ve made it simple to keep track of your points and how far
+                            they’ll take you. So 10,000 points gives you 10 hours’ flying time at the best hourly rates.
+                            And, as always, you’re guaranteed access to the latest helicopter types.</p>
+                    </div>
+                    <div class="overview">
+                        <h3 class="overview-heading is-secondary">Refer a friend and collect more points</h3>
+                        <p class="type--centred narrow">Refer a friend to FLYT and we’ll give them points towards their
+                            first flight when they join. When they book, we will also give you points to say thank you
+                            for the referral.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="ff-full-image is-interior"></div>
+
+        <section class="section ff-map">
+            <div class="container">
+                <div class="section-wrapper">
+                    <h3 class="section-heading is-primary type--xl">How far will <br>FLYT+ take you?</h3>
+                    <p class="type--centred">The map shows how far you can fly in one or two hours, based on flight
+                        times in our twin-engine helicopters. To give you an idea of points/flight time, flying from
+                        London to Manchester will cost approximately 1,000 points. For flights to major sporting events
+                        and into Central London, add an extra 250 points.</p>
+                    <div id="map-radius"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section is-dark ff-share">
+            <div class="container">
+                <div class="section-wrapper">
+                    <h3 class="section-heading is-secondary">Book for yourself or share the cost.</h3>
+                    <p class="type--centred narrow">If there are any empty seats on your flight, you have the option to
+                        share them through OpenFLYT. Pick this option and we’ll post the spare seats on the FLYT portal.
+                        The seats cost less than full price, so other FLYT members can enjoy the benefits of private
+                        helicopter flights at a reasonable cost. You benefit too – we’ll give you a credit for every
+                        seat sold, reducing the price of your flight.</p>
+                    <div class="share-cta">
+                        <div class="button-container">
+                            <a href="#" class="button is-primary is-outlined">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section ff-benefits">
+            <div class="container">
+                <div class="section-wrapper">
+                    <div class="benefits">
+                        <div class="benefits-heading">
+                            <h3 class="section-heading no-margin is-white">FLYT+ Benefits</h3>
+                        </div>
+                        <ul class="benefit-list no-list">
+                            <!-- 1 -->
+                            <li class="benefit-item aspect-ratio-box is-90">
+                                <span class="benefit-item__body">Speedy, <br>no hassle booking</span>
+                            </li>
+                            <!-- 2 -->
+                            <li class="benefit-item aspect-ratio-box is-90">
+                                <span class="benefit-item__body">Only pay for <br>flight time you use</span>
+                                <div class="benefit-item__image is-half"></div>
+                            </li>
+                            <!-- 3 -->
+                            <li class="benefit-item aspect-ratio-box is-90" aria-hidden="true">
+                                <div class="benefit-item__image"></div>
+                            </li>
+                            <!-- 4 -->
+                            <li class="benefit-item aspect-ratio-box is-90">
+                                <span class="benefit-item__body">Earn points <br>with every flight</span>
+                                <div class="benefit-item__image is-half"></div>
+                            </li>
+                            <!-- 5 -->
+                            <li class="benefit-item aspect-ratio-box is-90">
+                                <span class="benefit-item__body">Refer a friend to FLYT <br>and you both get bonus
+                                    <br>points when they join</span>
+                            </li>
+                            <!-- 6 -->
+                            <li class="benefit-item aspect-ratio-box is-90" aria-hidden="true">
+                                <div class="benefit-item__image"></div>
+                            </li>
+                            <!-- 7 -->
+                            <li class="benefit-item aspect-ratio-box is-90">
+                                <span class="benefit-item__body">No hidden fees <br>or extras</span>
+                                <div class="benefit-item__image is-half"></div>
+                            </li>
+                            <!-- 8 -->
+                            <li class="benefit-item aspect-ratio-box is-90">
+                                <span class="benefit-item__body">There are membership options to suit your needs and
+                                    budget</span>
+                            </li>
+                            <!-- 9 -->
+                            <li class="benefit-item aspect-ratio-box is-90">
+                                <span class="benefit-item__body">FLYT+ credit <br>never expires</span>
+                                <div class="benefit-item__image is-half"></div>
+                            </li>
+                            <!-- 10 -->
+                            <li class="benefit-item aspect-ratio-box is-90" aria-hidden="true">
+                                <div class="benefit-item__image"></div>
+                            </li>
+                            </ulc>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section is-light">
+            <div class="container">
+                <div class="section-wrapper">
+                    <h3 class="section-heading is-secondary">Find the perfect helicopter for your trip.</h3>
+                    <ul class="chopper-types no-list">
+                        <li class="chopper-type">
+                            <div class="chopper-type__container">
+                                <h4 class="chopper-type__header">
+                                    <span class="chopper-type__header-title">Single Engine</span>
+                                    <span class="chopper-type__header-subtitle">Helicopter</span>
+                                </h4>
+                                <div class="chopper-type__models">
+                                    <ul class="chopper-type__model-list no-list">
+                                        <li>EC120</li>
+                                        <li>AS350</li>
+                                        <li>Jet&nbsp;Ranger</li>
+                                        <li>Long&nbsp;Ranger</li>
+                                    </ul>
+                                </div>
+                                <div class="chopper-type__stats">
+                                    <p class="chopper-type__stat is-speed">140mph</p>
+                                    <p class="chopper-type__stat is-capacity">4-6</p>
+                                </div>
+                                <p class="chopper-type__points"><span>1 hour = 800 points</span></p>
+                                <p class="chopper-type__price"><span>£12,000 - £1,000 / PM</span></p>
+                            </div>
+                        </li>
+                        <li class="chopper-type">
+                            <div class="chopper-type__container">
+                                <h4 class="chopper-type__header">
+                                    <span class="chopper-type__header-title">Light Twin</span>
+                                    <span class="chopper-type__header-subtitle">Helicopter</span>
+                                </h4>
+                                <div class="chopper-type__models">
+                                    <ul class="chopper-type__model-list no-list">
+                                        <li>AS355</li>
+                                        <li>H135</li>
+                                    </ul>
+                                </div>
+                                <div class="chopper-type__stats">
+                                    <p class="chopper-type__stat is-speed">160mph</p>
+                                    <p class="chopper-type__stat is-capacity">5-6</p>
+                                </div>
+                                <p class="chopper-type__points"><span>1 hour = 1000 points</span></p>
+                                <p class="chopper-type__price"><span>£18,000 - £1,500 / PM</span></p>
+                            </div>
+                        </li>
+                        <li class="chopper-type">
+                            <div class="chopper-type__container">
+                                <h4 class="chopper-type__header">
+                                    <span class="chopper-type__header-title">Medium Twin</span>
+                                    <span class="chopper-type__header-subtitle">Helicopter</span>
+                                </h4>
+                                <div class="chopper-type__models">
+                                    <ul class="chopper-type__model-list no-list">
+                                        <li>AW109</li>
+                                        <li>Bell&nbsp;429</li>
+                                        <li>H155</li>
+                                    </ul>
+                                </div>
+                                <div class="chopper-type__stats">
+                                    <p class="chopper-type__stat is-speed">180mph</p>
+                                    <p class="chopper-type__stat is-capacity">5-6</p>
+                                </div>
+                                <p class="chopper-type__points"><span>1 hour = 1200 points</span></p>
+                                <p class="chopper-type__price"><span>£21,000 - £1,700 / PM</span></p>
+                            </div>
+                        </li>
+                        <li class="chopper-type">
+                            <div class="chopper-type__container">
+                                <h4 class="chopper-type__header">
+                                    <span class="chopper-type__header-title">Large Twin</span>
+                                    <span class="chopper-type__header-subtitle">Helicopter</span>
+                                </h4>
+                                <div class="chopper-type__models">
+                                    <ul class="chopper-type__model-list no-list">
+                                        <li>AW169</li>
+                                        <li>AW139</li>
+                                        <li>AS365</li>
+                                    </ul>
+                                </div>
+                                <div class="chopper-type__stats">
+                                    <p class="chopper-type__stat is-speed">185mph</p>
+                                    <p class="chopper-type__stat is-capacity">6-8</p>
+                                </div>
+                                <p class="chopper-type__points"><span>1 hour = 1500 points</span></p>
+                                <p class="chopper-type__price"><span>£25,000 - £2,100 / PM</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section is-dark ff-qualities">
+            <div class="container">
+                <div class="section-wrapper">
+                    <div class="qualities swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="quality swiper-slide">
+                                <div class="quality-content">
+                                    <h3 class="quality-heading is-secondary">Little things, big difference.</h3>
+                                    <p class="quality-body type--centred">The team behind FLYT has many years of
+                                        combined
+                                        experience in the world of helicopter charter. We know it’s the little things
+                                        that
+                                        make all the difference so we’ve put all our expertise into making FLYT simple
+                                        to
+                                        use. Now, in just a few clicks, you can be ready to fly almost anywhere.</p>
+                                </div>
+                            </div>
+                            <div class="quality swiper-slide">
+                                <div class="quality-content">
+                                    <h3 class="quality-heading is-secondary">Top-notch comes as standard.</h3>
+                                    <p class="quality-body type--centred">We only work with the UK’s leading helicopter
+                                        operators so you always get top-notch service. All our operators are
+                                        well-established businesses. Experienced and professional, they guarantee safe,
+                                        hassle-free helicopter trips every time.</p>
+                                </div>
+                            </div>
+                            <div class="quality swiper-slide">
+                                <div class="quality-content">
+                                    <h3 class="quality-heading is-secondary">Your safety and comfort assured.</h3>
+                                    <p class="quality-body type--centred">When you book with FLYT, you have the added
+                                        reassurance that we are committed to the highest levels ofsafety and performance
+                                        that meet national and international standards.</p>
+                                </div>
+                            </div>
+                            <div class="quality swiper-slide">
+                                <div class="quality-content">
+                                    <h3 class="quality-heading is-secondary">CAA Licensed.</h3>
+                                    <p class="quality-body type--centred">All our operators are fully licensed and
+                                        regulated
+                                        by the CAA. We carry out checks on company insurances, airworthiness
+                                        certificates,
+                                        along with aircraft inspections and crew background checks.</p>
+                                </div>
+                            </div>
+                            <div class="quality swiper-slide">
+                                <div class="quality-content">
+                                    <h3 class="quality-heading is-secondary">Complete transparency.</h3>
+                                    <p class="quality-body type--centred">We’re happy to share our partners’ registered
+                                        aircraft operators certificates to reassure you that all the right these safety
+                                        requirements are in place before you book any flight, so you can be sure you’re
+                                        always in safe hands.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section is-primary">
+            <div class="container">
+                <div class="section-wrapper">
+                    <h3 class="section-heading">Join us today.</h3>
+                    <form action="do-you-want-this-mushroom" class="form">
+                        <div class="form-field is-narrow">
+                            <label for="first-name"></label>
+                            <input type="text" placeholder="First name" id="first-name" name="first-name"
+                                class="input-field">
+                        </div>
+                        <div class="form-field is-narrow">
+                            <label for="last-name"></label>
+                            <input type="text" placeholder="Last name" id="last-name" name="last-name"
+                                class="input-field">
+                        </div>
+                        <div class="form-field is-narrow">
+                            <label for="email"></label>
+                            <input type="email" placeholder="Email" id="email" name="email" class="input-field">
+                        </div>
+                        <div class="form-field is-narrow">
+                            <label for="company"></label>
+                            <input type="text" placeholder="Company" id="company" name="company" class="input-field">
+                        </div>
+                        <div class="form-field is-narrow">
+                            <label for="phone"></label>
+                            <input type="text" placeholder="Phone" id="phone" name="phone" class="input-field">
+                        </div>
+                        <div class="form-field">
+                            <textarea name="message" id="message" cols="30" rows="10" class="input-field"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-field">
+                            <div class="button-container push-right">
+                                <input type="submit" value="Send Enquiry" class="button is-dark is-outlined">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </article>
+
+    <!-- Swiper -->
+    <script src="js/swiper.js"></script>
+    <!-- Maps -->
+    <script src="js/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD60MmbsaCKogaSj1Kjx9DvlhEbyA20cAk&callback=initMap&libraries=geometry&sensor=false"
+        async defer></script>
+</body>
+
+</html>

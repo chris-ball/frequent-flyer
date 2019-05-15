@@ -1,0 +1,14 @@
+/* Use breakpoints map to apply additional media-query properties */
+@mixin apply_breakpoints_to($prop-list, $prop) {
+	// Loop breakpoints map
+	@each $bp, $mw in $break-points {
+		// Current iteration index
+		$index: index($break-points, $bp $mw);
+		// Check value exists at accompanying list index
+		@if ($index <= length($prop-list) && nth($prop-list, $index)) {
+			@media screen and (min-width: $bp) {
+				#{$prop}: nth($prop-list, $index);
+			}
+		}
+	}
+}

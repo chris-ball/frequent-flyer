@@ -1,0 +1,40 @@
+.button-container {
+	display: flex;
+	justify-content: center;
+
+	&.push-right {
+		justify-content: flex-end;
+	}
+}
+
+.button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-family: "EB Garamond";
+	font-style: italic;
+	max-width: 320px;
+	padding: 1rem;
+	text-align: center;
+	width: 100%;
+
+	&.is-primary {
+		background-color: $teal;
+		color: #000;
+		&.is-outlined {
+			background-color: transparent;
+			border: 2px solid currentColor;
+			color: $teal;
+		}
+	}
+
+	&.is-dark {
+		background-color: $charcoal;
+		color: #fff;
+		&.is-outlined {
+			background-color: transparent;
+			border: 2px solid currentColor;
+			color: $charcoal;
+		}
+	}
+}

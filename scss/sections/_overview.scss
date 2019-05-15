@@ -1,0 +1,34 @@
+.ff-overview {
+	color: #848484;
+}
+
+.overview {
+	padding: 16% 0;
+	position: relative;
+	&:not(:last-child):after {
+		background-color: #979797;
+		bottom: 0;
+		content: "";
+		height: 1px;
+		left: 20%;
+		position: absolute;
+		width: 60%;
+	}
+	&:first-of-type {
+		padding-top: 0;
+	}
+	&:last-of-type {
+		padding-bottom: 0;
+	}
+}
+
+.overview-heading {
+	color: $coffee;
+	font-family: inherit;
+	font-size: 32px;
+	font-style: italic;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 3rem;
+	text-align: center;
+}

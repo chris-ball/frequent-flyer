@@ -1,0 +1,22 @@
+.ff-intro {
+	color: #848484;
+}
+
+.intro-body {
+	position: relative;
+	&:before {
+		background-image: url("/assets/propeller.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		display: block;
+		height: 56px;
+		left: 50%;
+		margin: -5% 0 5%;
+		position: relative;
+		top: -1rem;
+		transform: translateX(-50%);
+		width: 56px;
+	}
+}

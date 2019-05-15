@@ -1,0 +1,161 @@
+$images: (
+	"/assets/nicolas-jossi-635851.jpg",
+	"/assets/EXPH-0404-352.jpg",
+	"/assets/30886561932_f3492068.jpg",
+	"/assets/30977309185_1b6682f5.jpg",
+	"/assets/LHP_2685.jpg",
+	"/assets/jean-gerber-546269-u.jpg"
+);
+
+.ff-benefits {
+	background-image: linear-gradient(
+		to bottom,
+		$charcoal 50%,
+		transparent 50%
+	);
+	background-size: 100%;
+	& .section-wrapper {
+		padding-top: 0;
+	}
+}
+
+.benefits {
+	background-color: #fff;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+	color: #848484;
+	margin: 0 1rem;
+}
+
+.benefits-heading {
+	background-color: $coffee;
+	color: #fff;
+	padding: 1.25em;
+}
+
+.benefit-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-family: "Overpass";
+	font-size: 14px;
+	$font-sizes: 16px, 18px, 20px, 24px;
+	@include apply_breakpoints_to($font-sizes, font-size);
+}
+
+.benefit-item {
+	border-style: solid;
+	border-width: 0 0 5px 0;
+	$border-width: 0 0 7px 0, 0 0 9px 0, 0 0 12px 0, 0 0 16px 0;
+	@include apply_breakpoints_to($border-width, border-width);
+	flex: 0 0 50%;
+	$flex: null, 0 0 33.333%, null, null;
+	@include apply_breakpoints_to($flex, flex);
+	position: relative;
+
+	&:nth-of-type(1) {
+		border-color: $coffee;
+		order: 1;
+	}
+	&:nth-of-type(2) {
+		border-color: $teal;
+		$border-color: null, $coffee, null, null;
+		@include apply_breakpoints_to($border-color, border-color);
+		order: 2;
+		.benefit-item__image {
+			background-image: url(#{nth($images, 4)});
+			$bgi: null, url("#{nth($images, 1)}"), null, null;
+			@include apply_breakpoints_to($bgi, background-image);
+		}
+	}
+	&:nth-of-type(3) {
+		border-color: $teal;
+		order: 3;
+		.benefit-item__image {
+			background-image: url(#{nth($images, 1)});
+			$bgi: null, url("#{nth($images, 3)}"), null, null;
+			@include apply_breakpoints_to($bgi, background-image);
+		}
+	}
+	&:nth-of-type(4) {
+		border-color: $coffee;
+		$border-color: null, $teal, null, null;
+		@include apply_breakpoints_to($border-color, border-color);
+		order: 4;
+		$order: null, 2, null, null;
+		@include apply_breakpoints_to($order, order);
+		.benefit-item__image {
+			$bgi: null, url("#{nth($images, 2)}"), null, null;
+			@include apply_breakpoints_to($bgi, background-image);
+		}
+	}
+	&:nth-of-type(5) {
+		border-color: $coffee;
+		order: 5;
+	}
+	&:nth-of-type(6) {
+		border-color: $coffee;
+		order: 6;
+		$order: null, 10, null, null;
+		@include apply_breakpoints_to($order, order);
+		.benefit-item__image {
+			background-image: url("#{nth($images, 3)}");
+			$bgi: null, url("#{nth($images, 2)}"), null, null;
+			@include apply_breakpoints_to($bgi, background-image);
+		}
+	}
+	&:nth-of-type(7) {
+		border-color: $coffee;
+		order: 7;
+		$order: null, 5, null, null;
+		@include apply_breakpoints_to($order, order);
+		.benefit-item__image {
+			background-image: url("#{nth($images, 2)}");
+			$bgi: null, url("#{nth($images, 4)}"), null, null;
+			@include apply_breakpoints_to($bgi, background-image);
+		}
+	}
+	&:nth-of-type(8) {
+		border-color: $teal;
+		order: 8;
+	}
+	&:nth-of-type(9) {
+		border-color: $teal;
+		$border-color: null, $coffee, null, null;
+		@include apply_breakpoints_to($border-color, border-color);
+		order: 9;
+		$order: null, 7, null, null;
+		@include apply_breakpoints_to($order, order);
+		.benefit-item__image {
+			$bgi: null, url("#{nth($images, 5)}"), null, null;
+			@include apply_breakpoints_to($bgi, background-image);
+		}
+	}
+	&:nth-of-type(10) {
+		border-color: $coffee;
+		order: 10;
+		$display: null, none, null, null;
+		@include apply_breakpoints_to($display, display);
+		.benefit-item__image {
+			background-image: url("#{nth($images, 6)}");
+		}
+	}
+}
+
+.benefit-item__body {
+	display: inline-block;
+	max-width: 12em;
+	padding: 1rem;
+}
+
+.benefit-item__image {
+	background-position: center;
+	background-size: cover;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	&.is-half {
+		top: 50%;
+	}
+}
